@@ -16,6 +16,18 @@ struct CircleView: View {
 
     var body: some View {
         VStack{
+            HStack{
+                VStack{
+                    Text("Circle")
+                        .font(Font.system(size: 40))
+                        .padding(.top)
+                    Spacer()
+                }
+                
+                Image("Circle")
+                    .resizable()
+                    .scaledToFit()
+            }
             
             HStack{
                 
@@ -51,6 +63,7 @@ struct CircleView: View {
                     Text("\(currentCircle.area)")
                     
                         .padding(.horizontal)
+                    Spacer()
                 }
                 Spacer()
             }
