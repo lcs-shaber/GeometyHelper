@@ -8,8 +8,15 @@
 import SwiftUI
 
 struct CircleView: View {
+    
+    // Mark: Stored Properties
+    @State var radius = 10.0
+    
+    // Mark: Computed Properties
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("\(radius)")
+            .font(.largeTitle)
     }
 }
 
