@@ -17,43 +17,59 @@ struct ConeView: View {
     var body: some View {
         
         VStack{
-            HStack{
-                VStack{
-                    Text("Circle")
-                        .font(Font.system(size: 40))
-                        .padding(.top)
+               
+                Image("Cone")
+                    .resizable()
+                    .scaledToFit()
+                    .padding()
+           
+            
+            VStack {
+                HStack {
+                    Text("Slider: r")
                     Spacer()
                 }
                 
-                Image("Circle")
-                    .resizable()
-                    .scaledToFit()
+                HStack{
+                    
+                    Text("0")
+                    Slider(value: $currentCone.r, in: 0...100)
+                   Text("100")
+                        
+                }
             }
             
-            HStack{
-                
-                Text("0")
-                Slider(value: $currentCone.r, in: 0...100)
-               Text("100")
+            
+            
+            VStack {
+                HStack {
+                    Text("Slider: h")
+                    Spacer()
+                }
+                HStack{
+                    
+                    Text("0")
+                    Slider(value: $currentCone.h, in: 0...100)
+                   Text("100")
+                }
             }
             
-            HStack{
-                
-                Text("0")
-                Slider(value: $currentCone.h, in: 0...100)
-               Text("100")
-            }
-            
-            HStack{
-                
-                Text("0")
-                Slider(value: $currentCone.s, in: 0...100)
-               Text("100")
+            VStack {
+                HStack {
+                    Text("Slider: s")
+                    Spacer()
+                }
+                HStack{
+                    
+                    Text("0")
+                    Slider(value: $currentCone.s, in: 0...100)
+                   Text("100")
+                }
             }
             
         }
         
-        
+        .padding()
     }
 }
 
