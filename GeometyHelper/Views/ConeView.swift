@@ -39,7 +39,18 @@ struct ConeView: View {
                 }
             }
             
-            
+            VStack {
+                HStack {
+                    Text("Slider: s")
+                    Spacer()
+                }
+                HStack{
+                    
+                    Text("0")
+                    Slider(value: $currentCone.s, in: 0...100)
+                   Text("100")
+                }
+            }
             
             VStack {
                 HStack {
@@ -54,19 +65,26 @@ struct ConeView: View {
                 }
             }
             
-            VStack {
-                HStack {
-                    Text("Slider: s")
-                    Spacer()
-                }
-                HStack{
-                    
-                    Text("0")
-                    Slider(value: $currentCone.s, in: 0...100)
-                   Text("100")
-                }
-            }
-            
+                Text("Area of Base")
+                    .bold()
+                    .padding(.top)
+                Text("\(currentCone.ABase)")
+                    .padding(.bottom)
+                
+                Text("Area of Lateral Surface")
+                    .bold()
+                Text("\(currentCone.ALateralSurface)")
+                
+                Text("Total Area")
+                    .bold()
+                    .padding(.top)
+                Text("\(currentCone.ATotal)")
+                
+                Text("Volume")
+                    .bold()
+                    .padding(.top)
+                Text("\(currentCone.Volume)")
+              
         }
         
         .padding()
