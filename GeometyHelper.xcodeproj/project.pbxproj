@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E02AD72E2B570C5900864EE0 /* Cone.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02AD72D2B570C5900864EE0 /* Cone.swift */; };
+		E02AD7302B570CE300864EE0 /* ConeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02AD72F2B570CE300864EE0 /* ConeView.swift */; };
 		E03F511E2B55D4DC0096894F /* GeometyHelperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03F511D2B55D4DC0096894F /* GeometyHelperApp.swift */; };
 		E03F51222B55D4DE0096894F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E03F51212B55D4DE0096894F /* Assets.xcassets */; };
 		E03F51252B55D4DE0096894F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E03F51242B55D4DE0096894F /* Preview Assets.xcassets */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E02AD72D2B570C5900864EE0 /* Cone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cone.swift; sourceTree = "<group>"; };
+		E02AD72F2B570CE300864EE0 /* ConeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConeView.swift; sourceTree = "<group>"; };
 		E03F511A2B55D4DC0096894F /* GeometyHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeometyHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E03F511D2B55D4DC0096894F /* GeometyHelperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometyHelperApp.swift; sourceTree = "<group>"; };
 		E03F51212B55D4DE0096894F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -74,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				E03F512D2B55D5EC0096894F /* CircleView.swift */,
+				E02AD72F2B570CE300864EE0 /* ConeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -82,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				E03F512F2B55D8330096894F /* Circle.swift */,
+				E02AD72D2B570C5900864EE0 /* Cone.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -158,6 +164,8 @@
 			files = (
 				E03F512E2B55D5EC0096894F /* CircleView.swift in Sources */,
 				E03F511E2B55D4DC0096894F /* GeometyHelperApp.swift in Sources */,
+				E02AD72E2B570C5900864EE0 /* Cone.swift in Sources */,
+				E02AD7302B570CE300864EE0 /* ConeView.swift in Sources */,
 				E03F51302B55D8330096894F /* Circle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
