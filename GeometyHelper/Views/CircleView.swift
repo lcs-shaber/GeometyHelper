@@ -37,7 +37,7 @@ struct CircleView: View {
             }
             
             HStack{
-                VStack{
+                VStack (alignment: .leading) {
                 
                     Text("Radius")
                         .bold()
@@ -62,7 +62,6 @@ struct CircleView: View {
                         .font(Font.system(size: 10))
                     Text("\(currentCircle.area)")
                     
-                        .padding(.horizontal)
                     Spacer()
                 }
                 Spacer()

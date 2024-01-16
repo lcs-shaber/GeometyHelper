@@ -17,12 +17,12 @@ struct ConeView: View {
     var body: some View {
         
         VStack{
-               
-                Image("Cone")
-                    .resizable()
-                    .scaledToFit()
-                    .padding()
-           
+            
+            Image("Cone")
+                .resizable()
+                .scaledToFit()
+                .padding()
+            
             
             VStack {
                 HStack {
@@ -34,8 +34,8 @@ struct ConeView: View {
                     
                     Text("0")
                     Slider(value: $currentCone.r, in: 0...100)
-                   Text("100")
-                        
+                    Text("100")
+                    
                 }
             }
             
@@ -48,7 +48,7 @@ struct ConeView: View {
                     
                     Text("0")
                     Slider(value: $currentCone.s, in: 0...100)
-                   Text("100")
+                    Text("100")
                 }
             }
             
@@ -61,10 +61,12 @@ struct ConeView: View {
                     
                     Text("0")
                     Slider(value: $currentCone.h, in: 0...100)
-                   Text("100")
+                    Text("100")
                 }
             }
             
+        HStack{
+            VStack (alignment: .leading) {
                 Text("Area of Base")
                     .bold()
                     .padding(.top)
@@ -84,6 +86,11 @@ struct ConeView: View {
                     .bold()
                     .padding(.top)
                 Text("\(currentCone.Volume)")
+            
+                Spacer()
+            }
+            Spacer()
+        }
               
         }
         
